@@ -1,0 +1,14 @@
+.tableGrad{
+    border-collapse: collapse;
+  }
+  .tableGrad > thead > tr > td{
+    border: 1px solid lightcoral;
+    background-color: purple;
+    color: white;
+    padding: 5px 7px;
+  }
+  .tableGrad > tbody > tr > td{
+    border: 1px solid purple;
+    color: Black;
+    padding: 5px 7px;
+  }

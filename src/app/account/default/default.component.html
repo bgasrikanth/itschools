@@ -1,0 +1,28 @@
+<div style="float: left;">
+    <h1>Default Page</h1>
+    <br/>
+    <table [ngClass]="'tableGrad'">
+        <thead>
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Is Graduate</td>
+            <td>Graduation Details</td>
+        </tr>
+    </thead>
+    <tbody>        
+    <tr *ngFor="let m of employeeList">
+                <td>{{m.name}}</td>
+                <td>{{m.age}}</td>
+                <td>{{m.isGraduate}}</td>                
+                <td *ngIf="m.isGraduate">
+                    <div>
+                        <p>{{m.graduateDetails.collegename}} && {{m.graduateDetails.course}}</p>
+                    </div>                    
+                </td>
+    </tr>
+</tbody>
+</table>
+<br/>
+<button type="button" (click)="TestingButtonClick()">Testing Button</button>
+</div>
